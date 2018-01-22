@@ -7,3 +7,7 @@ Aplicação em NodeJS utilizando os seguintes pacotes:
     consign,
     body-parser,
     mysql/mongodb
+
+Para realizar testes é necessário instalar o MongoDB:
+    link: https://www.mongodb.com/download-center?jmp=nav#community
+    
