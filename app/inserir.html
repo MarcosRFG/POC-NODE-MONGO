@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>API de teste | Inserir</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>API de teste | Inserir</h2>
+  <br>
+  <h4>Aqui você pode inserir um novo pagamento</h4>
+<form action="http://localhost:3000/inserir" method="POST" class="form-inline">     
+
+    <div class="form-group">
+        <label for="sel1">Selecione a forma de pagamento:</label>
+        <br>
+        <select class="form-control" id="sel1"  name="forma_de_pagamento">
+            <option>Debito</option>
+            <option>Crédito</option>
+        </select>
+        <br><br>
+        <label for="valor">Valor:</label>
+        <br>
+        <input type="text" class="form-control" id="valor" placeholder="Informe o valor a pagar" name="valor">
+        <br><br>
+        <button type="submit" class="btn btn-success">Inserir</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='/'">Voltar</button>
+
+    </div>
+    
+  </form>
+</div>
+
+</body>
+</html>
